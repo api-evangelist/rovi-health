@@ -1,7 +1,30 @@
 aid: rovi-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rovi-health.png
 name: Rovi Health
-description: Rovi Health is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rovi Health is a clinical navigation platform for employer health plans that
+  puts "a clinician in every member's pocket." Members get text-based access to
+  registered nurse care advisors who help them find high-quality, in-network
+  doctors and specialists, navigate their insurance benefits and coverage, and
+  coordinate care across every stage of treatment. The company also uses AI
+  agents to search millions of pricing and quality data points to surface the
+  best in-network providers for complex care and to handle appointment
+  scheduling, aiming to help employers cut 10-20% of healthcare spend while
+  improving employee outcomes. Rovi Health was a Y Combinator (Fall 2025)
+  company operating in the digital health, health insurance navigation, and
+  consumer health services space. As of this enrichment pass Rovi Health
+  publishes no public API, SDK, or developer documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/rovi-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Health
+- Healthcare
+- Digital Health
+- Health Insurance
+- Care Navigation
+- Employer Benefits
+- Telehealth
 apis: []
+common:
+- type: DomainSecurity
+  url: security/rovi-health-domain-security.yml
+- type: Website
+  url: https://www.rovi.health
+- type: Login
+  url: https://app.rovi.health
+- type: TermsOfService
+  url: https://www.rovi.health/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.rovi.health/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
